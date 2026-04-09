@@ -26,7 +26,9 @@ class JsonLoader(BaseLoader):
         """
         return list(self.directory.glob(self.pattern))
 
-    def _flatten(self, obj: Any, prefix: str = "", out: Dict[str, Any] = None) -> Dict[str, Any]:
+    def _flatten(
+        self, obj: Any, prefix: str = "", out: Dict[str, Any] = None
+    ) -> Dict[str, Any]:
         """
         Aplati récursivement une structure JSON (dictionnaires et listes)
         en un dictionnaire à clés simples.

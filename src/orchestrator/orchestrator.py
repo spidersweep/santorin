@@ -13,7 +13,9 @@ class Orchestrator:
     High-level orchestrator for the full translation pipeline.
     """
 
-    def __init__(self, data_path: str, output_dir: str, translation_model: str, metric: str):
+    def __init__(
+        self, data_path: str, output_dir: str, translation_model: str, metric: str
+    ):
         # Build full input path
         self.input_path = os.path.join(DATA_DIR, data_path)
 
@@ -62,6 +64,6 @@ if __name__ == "__main__":
         data_path="big.csv",
         output_dir="output",
         translation_model="Helsinki-NLP/opus-mt-fr-en",
-        metric="bleu"
+        metric="bleu",
     )
     orch.run()

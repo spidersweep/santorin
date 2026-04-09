@@ -15,7 +15,7 @@ class CSVLoader(BaseLoader):
     def __init__(self, directory: Union[str, Path], pattern: str = "*.csv"):
         """
         Initialise le chargeur avec un répertoire et un motif de sélection.
-        
+
         Paramètres
         ----------
         directory : str ou Path

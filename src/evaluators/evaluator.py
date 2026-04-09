@@ -21,7 +21,4 @@ class Evaluator:
         return chrf.score
 
     def evaluate(self):
-        return {
-            "BLEU": self.compute_bleu(),
-            "chrF": self.compute_chrf()
-        }
+        return {"BLEU": self.compute_bleu(), "chrF": self.compute_chrf()}

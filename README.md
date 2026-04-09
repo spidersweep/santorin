@@ -16,6 +16,7 @@ Le modèle utilisé est [`Helsinki-NLP/opus-mt-fr-en`](https://huggingface.co/He
 
 ## 🗂️ Structure du projet
 
+```
 santorin/
 ├── src/
 │   ├── loaders/        # Chargement des données (CSV, JSON)
@@ -30,6 +31,7 @@ santorin/
 ├── tests/              # Tests unitaires
 ├── pyproject.toml
 └── requirements.txt
+```
 
 ---
 
@@ -53,11 +55,14 @@ python src/main.py
 ```
 
 Résultat attendu :
+
+```
 Loaded 20 rows.
 Traduction: 100%|████████████| 15/15
 Saved translated file to: output/translated.csv
 BLEU: 41.61
 chrF: 70.46
+```
 
 ---
 
@@ -78,17 +83,3 @@ pytest
 ## 🐍 Version Python
 
 Compatible avec Python 3.10+
-data/
-output/
-tests/
-## Auteur
-lara
-## Version Python
-Compatible avec Python 3.10.
-## Description
-Ce projet sert de squelette pour un pipeline Machine Learning modulaire :
-- loaders : chargement des données
-- processors : prétraitement
-- translators : transformation ou traduction
-- evaluators : évaluation
-- orchestrator : coordination du pipeline
